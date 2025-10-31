@@ -1,0 +1,101 @@
+
+header.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color:whitesmoke;
+  padding: 10px 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.header-left .logo {
+  height: 100px; /* ajusta según tu diseño */
+  width: auto;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 1.1em;
+  font-weight: bold;
+}
+
+.profile-icon {
+  width: 45px;
+  height: 45px;
+  border: 2px solid #000;
+  border-radius: 50%;
+  background: url('/img/profile-icon.svg') center/contain no-repeat, #fff;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* HEADER */
+header {
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+img{
+
+}
+header h1 {
+  display: inline;
+  margin-left: 10px;
+}
+
+/* CONTENEDOR */
+.container {
+  display: flex;
+  height: calc(100vh - 60px);
+}
+
+/* SIDEBAR */
+.sidebar {
+  width: 250px;
+  background-color:darkslategray;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  min-height: 100%; /* Añade esto para que ocupe todo el alto del contenedor */
+  box-shadow: 5px 2px 5px rgba(0, 0, 0, 0.1);
+
+}
+
+.sidebar a {
+  padding: 15px;
+  background-color: #ddd;
+  text-decoration: none;
+  color: #333;
+  border-radius: 5px;
+}
+
+.sidebar a:hover {
+  background-color: #ccc;
+}
+
+/* CONTENIDO PRINCIPAL */
+main {
+  flex: 1;
+  padding: 30px;
+  overflow-y: auto;
+}
+

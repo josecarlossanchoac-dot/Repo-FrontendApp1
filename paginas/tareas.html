@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style> /* Esto es para que cargue el el header y el sidebar crrectamente*/
+        body {
+            visibility: hidden;
+            opacity: 0;
+        }
+        body.loaded {
+            visibility: visible;
+            opacity: 1;
+        }
+    </style>
+    </style>
+    <link rel="preload" href="/estilos/header-sidebar.css" as="style">
+    <link rel="stylesheet" href="/estilos/header-sidebar.css">
+
+</head>
+<body>
+    <div id="header"></div>
+  
+    <div class="container">
+    <div id="sidebar"></div>
+    
+    <main>
+      <h2>Pantalla de tareas</h2>
+      <p>Contenido de pantalla de tareas</p>
+    </main>
+  </div>
+
+  <script src="/js/cargar-componente.js"></script>
+</body>
+</html>
