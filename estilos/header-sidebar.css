@@ -61,12 +61,13 @@ header h1 {
   margin-left: 10px;
 }
 
+
 /* CONTENEDOR */
 .container {
   display: flex;
   height: calc(100vh - 60px);
 }
-
+/* commit */
 /* SIDEBAR */
 .sidebar {
   width: 250px;
