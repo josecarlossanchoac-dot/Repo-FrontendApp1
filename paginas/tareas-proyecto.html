@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Proyectos</title>
+    <title>Tareas del Proyecto</title>
 
     <link rel="stylesheet" href="../estilos/header-sidebar.css">
-    <link rel="stylesheet" href="../estilos/proyectos.css">
+    <link rel="stylesheet" href="../estilos/tareas.css">
 </head>
 <body class="loaded">
 
@@ -32,17 +32,21 @@
         </aside>
 
         <main>
-            <h2>Proyectos</h2>
-            <p>Lista de proyectos obtenidos desde la API</p>
+            <div style="margin-bottom: 20px;">
+                <a href="proyectos.html" style="color: #007bff; text-decoration: none;">← Volver a Proyectos</a>
+            </div>
+            
+            <h2 id="titulo-proyecto">Tareas del Proyecto</h2>
+            <p id="subtitulo">Cargando tareas...</p>
 
-            <div id="proyectos" class="proyectos-container">
-                <!-- Cards generadas por proyectos.js -->
+            <div id="tareas" class="tareas-container">
+                <!-- Cards generadas por tareas-proyecto.js -->
             </div>
 
         </main>
 
     </div>
 
-    <script src="../js/proyectos.js"></script>
+    <script src="../js/tareas-proyecto.js"></script>
 </body>
 </html>

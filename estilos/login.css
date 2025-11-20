@@ -22,7 +22,18 @@
     margin: 20px;
 }
 
-
+.btn-continuar {
+    background: #4C6EF5;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    font-size: 1.1rem;
+    border-radius: 12px;
+    width: 100%;
+    transition: 0.25s ease;
+    font-weight: 600;
+    box-shadow: 0 3px 12px rgba(76, 110, 245, 0.25);
+}
 
 .cuadrado{
 }
