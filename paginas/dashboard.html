@@ -4,33 +4,38 @@
   <meta charset="UTF-8">
   <title>Inicio</title>
 
-  <style> /* Esto es para que cargue el el header y el sidebar crrectamente*/
-    body {
-        visibility: hidden;
-        opacity: 0;
-    }
-    body.loaded {
-        visibility: visible;
-        opacity: 1;
-    }
-  </style>
-
   <link rel="preload" href="/estilos/header-sidebar.css" as="style">
   <link rel="stylesheet" href="/estilos/header-sidebar.css">
   <link rel="stylesheet" href="css/index.css">
 </head>
-<body>
-  <div id="header"></div>
-  
+<body class="loaded">
+
+  <!-- HEADER DIRECTO -->
+  <header class="header">
+    <div class="header-left">
+      <img src="/img/logo.png" alt="Logo" class="logo">
+      <h1>Dashboard</h1>
+    </div>
+    <div class="header-right">
+      <span>¡Hola <strong>usuario</strong>!</span>
+      <div class="profile-icon"></div>
+    </div>
+  </header>
+
   <div class="container">
-    <div id="sidebar"></div>
-    
+
+    <!-- SIDEBAR DIRECTO -->
+    <aside class="sidebar">
+      <a href="dashboard.html">Inicio</a>
+      <a href="tareas.html">Tareas</a>
+      <a href="proyectos.html">Proyectos</a>
+    </aside>
+
     <main>
       <h2>Página de Inicio</h2>
       <p>Contenido específico de inicio...</p>
     </main>
   </div>
 
-  <script src="/js/cargar-componente.js"></script>
 </body>
 </html>

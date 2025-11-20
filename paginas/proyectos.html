@@ -3,34 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Proyectos</title>
 
-    <style> /* Esto es para que cargue el el header y el sidebar crrectamente*/
-        body {
-            visibility: hidden;
-            opacity: 0;
-        }
-        body.loaded {
-            visibility: visible;
-            opacity: 1;
-        }
-    </style>
     <link rel="preload" href="/estilos/header-sidebar.css" as="style">
     <link rel="stylesheet" href="/estilos/header-sidebar.css">
-
 </head>
-<body>
-   <div id="header"></div>
-  
-    <div class="container">
-    <div id="sidebar"></div>
+<body class="loaded">
     
-    <main>
-      <h2>Esto es la pagina de proyecto</h2>
-      <p>Contenido específico de la parte de proyecto</p>
-    </main>
-  </div>
+    <!-- HEADER DIRECTO -->
+    <header class="header">
+        <div class="header-left">
+            <img src="/img/logo.png" alt="Logo" class="logo">
+            <h1>Dashboard</h1>
+        </div>
+        <div class="header-right">
+            <span>¡Hola <strong>usuario</strong>!</span>
+            <div class="profile-icon"></div>
+        </div>
+    </header>
 
-  <script src="/js/cargar-componente.js"></script>
+    <div class="container">
+
+        <!-- SIDEBAR DIRECTO -->
+        <aside class="sidebar">
+          <a href="dashboard.html">Inicio</a>
+          <a href="tareas.html">Tareas</a>
+          <a href="proyectos.html">Proyectos</a>
+        </aside>
+
+        <main>
+        <h2>Esto es la página de proyectos</h2>
+        <p>Contenido específico de proyecto</p>
+        </main>
+
+    </div>
+
 </body>
 </html>

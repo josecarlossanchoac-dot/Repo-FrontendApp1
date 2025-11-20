@@ -3,34 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style> /* Esto es para que cargue el el header y el sidebar crrectamente*/
-        body {
-            visibility: hidden;
-            opacity: 0;
-        }
-        body.loaded {
-            visibility: visible;
-            opacity: 1;
-        }
-    </style>
-    </style>
-    <link rel="preload" href="/estilos/header-sidebar.css" as="style">
-    <link rel="stylesheet" href="/estilos/header-sidebar.css">
+    <title>Tareas</title>
 
+    <link rel="stylesheet" href="../estilos/header-sidebar.css">
+    <link rel="stylesheet" href="../estilos/tareas.css">
 </head>
-<body>
-    <div id="header"></div>
-  
-    <div class="container">
-    <div id="sidebar"></div>
-    
-    <main>
-      <h2>Pantalla de tareas</h2>
-      <p>Contenido de pantalla de tareas</p>
-    </main>
-  </div>
+<body class="loaded">
 
-  <script src="/js/cargar-componente.js"></script>
+    <!-- HEADER DIRECTO -->
+    <header class="header">
+        <div class="header-left">
+          <img src="../img/logo.png" alt="Logo" class="logo">
+          <h1>Dashboard</h1>
+        </div>
+        <div class="header-right">
+          <span>¡Hola <strong>usuario</strong>!</span>
+          <div class="profile-icon"></div>
+        </div>
+    </header>
+
+    <div class="container">
+
+        <!-- SIDEBAR DIRECTO -->
+        <aside class="sidebar">
+            <a href="dashboard.html">Inicio</a>
+            <a href="tareas.html" class="active">Tareas</a>
+            <a href="proyectos.html">Proyectos</a>
+        </aside>
+
+        <main>
+            <h2>Tareas</h2>
+            <p>Lista de tareas obtenidas desde la API</p>
+
+            <div id="tareas" class="tareas-container">
+                <!-- Cards generadas por tareas.js -->
+            </div>
+
+        </main>
+
+    </div>
+
+    <script src="../js/tareas.js"></script>
 </body>
 </html>
