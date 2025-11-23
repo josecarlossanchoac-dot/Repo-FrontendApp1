@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', () => {
         .then(data => {
             console.log('Login exitoso:', data);
             localStorage.setItem('usuario', JSON.stringify(data));
-            window.location.href = 'paginas/dashboard.html';
+            window.location.href = 'paginas/proyectos.html';
         })
         .catch(error => {
             console.error('Error:', error);

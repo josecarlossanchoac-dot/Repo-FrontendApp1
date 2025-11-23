@@ -13,12 +13,12 @@
     <!-- HEADER DIRECTO -->
     <header class="header">
         <div class="header-left">
-          <img src="../img/logo.png" alt="Logo" class="logo">
-          <h1>Dashboard</h1>
+            <img src="../img/logo.png" alt="Logo" class="logo">
+            <h1>Proyectos</h1>
         </div>
         <div class="header-right">
           <span>¡Hola <strong>usuario</strong>!</span>
-          <div class="profile-icon"></div>
+          <div class="profile-icon" id="profileIcon">JC</div>
         </div>
     </header>
 
@@ -26,14 +26,14 @@
 
         <!-- SIDEBAR DIRECTO -->
         <aside class="sidebar">
-            <a href="dashboard.html">Inicio</a>
             <a href="tareas.html">Tareas</a>
             <a href="proyectos.html" class="active">Proyectos</a>
+            <button class="btnCerrarSesion" onclick="cerrarSesion()">Cerrar Sesión</button>
         </aside>
 
         <main>
             <div style="margin-bottom: 20px;">
-                <a href="proyectos.html" style="color: #007bff; text-decoration: none;">← Volver a Proyectos</a>
+                <a href="proyectos.html" style="color: #007bff; text-decoration: none;">Volver</a>
             </div>
             
             <h2 id="titulo-proyecto">Tareas del Proyecto</h2>
@@ -46,7 +46,7 @@
         </main>
 
     </div>
-
+    <script src="/js/auth.guard.js"></script>
     <script src="../js/tareas-proyecto.js"></script>
 </body>
 </html>

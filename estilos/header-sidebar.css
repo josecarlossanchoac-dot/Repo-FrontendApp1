@@ -1,43 +1,76 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+body {
+  font-family: Arial, sans-serif;
+  overflow: hidden; /* Evita scroll en el body */
+
+}
+
+/* ========== HEADER ========== */
 header.header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color:whitesmoke;
+  background-color: Darkslategray;
   padding: 10px 20px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  position: relative; /* Para posicionar el título centrado */
+  height: 140px; /* Altura que querías mantener */
+
 }
 
+/* Logo a la izquierda */
 .header-left {
   display: flex;
   align-items: center;
-  gap: 10px;
+  z-index: 2; /* Por encima del título */
 }
 
 .header-left .logo {
-  height: 100px; /* ajusta según tu diseño */
+  height: 140px;
   width: auto;
 }
 
+/* Título centrado absolutamente */
+.header-left h1,
+.header-left .titulo h1 {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #ffffff;
+  font-size: 1.8em;
+  font-weight: bold;
+  margin: 0;
+}
+
+/* Usuario a la derecha */
 .header-right {
   display: flex;
   align-items: center;
   gap: 10px;
   font-size: 1.1em;
   font-weight: bold;
+  color: #e8f5e9;
+  z-index: 2;
 }
+
 
 .profile-icon {
   width: 45px;
   height: 45px;
-  border: 2px solid #000;
+  border: 2px solid #fff;
   border-radius: 50%;
-  background: url('/img/profile-icon.svg') center/contain no-repeat, #fff;
-}
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+  background-color: darkolivegreen;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  font-weight: bold;
+  color: #fff;
 }
 
 body {
@@ -53,8 +86,24 @@ header {
   justify-content: space-between;
   align-items: center;
 }
-img{
+.btnCerrarSesion{
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+  width: 100%; /* para que ocupe todo el ancho como los otros botones */
+  margin-top: auto; /* esto lo empuja hacia abajo si usas flexbox */
+    flex-shrink: 0;
 
+}
+
+.btnCerrarSesion:hover{
+  background-color: #c82333;
 }
 header h1 {
   display: inline;
@@ -65,7 +114,7 @@ header h1 {
 /* CONTENEDOR */
 .container {
   display: flex;
-  height: calc(100vh - 60px);
+  height: calc(100vh - 140px);
 }
 /* commit */
 /* SIDEBAR */
@@ -78,7 +127,7 @@ header h1 {
   gap: 10px;
   min-height: 100%; /* Añade esto para que ocupe todo el alto del contenedor */
   box-shadow: 5px 2px 5px rgba(0, 0, 0, 0.1);
-
+ overflow-y: auto;
 }
 
 .sidebar a {
@@ -98,5 +147,6 @@ main {
   flex: 1;
   padding: 30px;
   overflow-y: auto;
+  
 }
 

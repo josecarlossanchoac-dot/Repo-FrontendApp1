@@ -13,6 +13,10 @@
     transition: transform 0.2s, box-shadow 0.2s;
 }
 
+
+.titulo{
+    background-color: #2980b9;
+}
 .proyecto-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 4px 12px rgba(0,0,0,0.15);
@@ -65,3 +69,4 @@
 .btn-ver-tareas:active {
     transform: scale(0.98);
 }
+
